@@ -5,11 +5,11 @@ class ScreenUtil {
   static const int defaultWidth = 414;
   static const int defaultHeight = 896;
 
-  /// Size of the phone in UI Design , px
+  /// Tamaño del teléfono en UI Design, px
   late num uiWidthPx;
   late num uiHeightPx;
 
-  /// allowFontScaling Specifies whether fonts should scale to respect Text Size accessibility settings. The default is false.
+  /// allowFontScaling Especifica si las fuentes deben escalarse para respetar la configuración de accesibilidad de Tamaño de texto. El valor predeterminado es falso.
   late bool allowFontScaling;
 
   static late double _screenWidth;
@@ -41,34 +41,34 @@ class ScreenUtil {
     _textScaleFactor = window.textScaleFactor;
   }
 
-  /// The number of font pixels for each logical pixel.
+  /// El número de píxeles de fuente para cada píxel lógico.
   static double get textScaleFactor => _textScaleFactor;
 
-  /// The size of the media in logical pixels (e.g, the size of the screen).
+  /// El tamaño de los medios en píxeles lógicos (por ejemplo, el tamaño de la pantalla).
   static double get pixelRatio => _pixelRatio;
 
-  /// The horizontal extent of this size.
+  /// La extensión horizontal de este tamaño.
   static double get screenWidth => _screenWidth / _pixelRatio;
 
-  ///The vertical extent of this size. dp
+  ///La extensión vertical de este tamaño. dp
   static double get screenHeight => _screenHeight / _pixelRatio;
 
-  /// The vertical extent of this size. px
+  /// La extensión vertical de este tamaño. px
   static double get screenWidthPx => _screenWidth;
 
-  /// The vertical extent of this size. px
+  /// La extensión vertical de este tamaño. px
   static double get screenHeightPx => _screenHeight;
 
   /// The offset from the top
   static double get statusBarHeight => _statusBarHeight / _pixelRatio;
 
-  /// The offset from the top
+  ///El desplazamiento desde arriba
   static double get statusBarHeightPx => _statusBarHeight;
 
-  /// The offset from the bottom.
+  /// El desplazamiento desde abajo.
   static double get bottomBarHeight => _bottomBarHeight;
 
-  /// The ratio of the actual dp to the design draft px
+  /// La relación entre el dp real y el borrador de diseño px
   double get scaleWidth => screenWidth / uiWidthPx;
 
   double get scaleHeight =>
@@ -76,24 +76,24 @@ class ScreenUtil {
 
   double get scaleText => scaleWidth;
 
-  /// Width function
-  /// Adapted to the device width of the UI Design.
-  /// Height can also be adapted according to this to ensure no deformation ,
-  /// if you want a square
+  /// Función de ancho
+  /// Adaptado al ancho del dispositivo del UI Design.
+  /// La altura también se puede adaptar de acuerdo con esto para garantizar que no se deforme,
+  /// si quieres un cuadrado
   double setWidth(num width) => width * scaleWidth;
 
-  /// Height function
-  /// Highly adaptable to the device according to UI Design
-  /// It is recommended to use this method to achieve a high degree of adaptation
-  /// when it is found that one screen in the UI design
-  /// does not match the current style effect, or if there is a difference in shape.
+  /// Función de altura
+  /// Altamente adaptable al dispositivo según UI Design
+  /// Se recomienda utilizar este método para lograr un alto grado de adaptación
+  /// cuando se encuentra que una pantalla en el diseño de la interfaz de usuario
+  /// no coincide con el efecto de estilo actual, o si hay una diferencia en la forma.
   double setHeight(num height) => height * scaleHeight;
 
-  ///FontSize function
-  ///@param [fontSize] UI in px.
-  ///Font size adaptation method
-  ///@param [fontSize] The size of the font on the UI design, in px.
-  ///@param [allowFontScaling]
+  /// Función tamaño de fuente
+  ///@param [tamaño de fuente] interfaz de usuario en px.
+  ///Método de adaptación del tamaño de fuente
+  ///@param [fontSize] El tamaño de la fuente en el diseño de la interfaz de usuario, en px.
+  ///@param [permitir escalado de fuentes]
   double setSp(num fontSize, {bool allowFontScalingSelf = false}) =>
       allowFontScalingSelf
           ? (allowFontScalingSelf
