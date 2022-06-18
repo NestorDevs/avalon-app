@@ -31,9 +31,9 @@ class MovieRepositoryImpl extends MovieRepository {
   }
 
   @override
-  Future<Either<AppError, List<MovieModel>>> getComingSoon() async {
+  Future<Either<AppError, List<MovieModel>>> getTopRated() async {
     try {
-      final movies = await remoteDataSource.getComingSoon();
+      final movies = await remoteDataSource.getTopRated();
       return Right(movies);
     } on SocketException {
       return const Left(AppError(AppErrorType.network));
