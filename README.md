@@ -23,3 +23,10 @@ http: para realizar solicitudes a la api rest de Movie db
 ## Estructura de carpetas
 
 <img src="screenshot/folder-tree.png" height=350></img>
+
+## Continuos Integration and Continuos Delivery
+
+- Basado en github Actions
+- Solo Android
+- Flujo de ocntruccion de entregable APK
+- Localizacion en release de Github Code
