@@ -36,4 +36,4 @@ https://github.com/NestorDevs/avalon-app/releases
 
 Captura
 
-<img src="screenshot/relase-apk.png" height=350></img>
+<img src="screenshot/release-apk.png" height=450></img>
