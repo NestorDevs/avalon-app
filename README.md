@@ -30,3 +30,10 @@ http: para realizar solicitudes a la api rest de Movie db
 - Solo Android
 - Flujo de ocntruccion de entregable APK
 - Localizacion en release de Github Code
+
+Fuente:
+https://github.com/NestorDevs/avalon-app/releases
+
+Captura
+
+<img src="screenshot/release-apk.png" height=450></img>
