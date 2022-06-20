@@ -1,16 +1,25 @@
-# avalon_app
+# Avalon Movie App Test
 
-A new Flutter project.
+Una App de peliculas para test Avalon.
 
-## Getting Started
+## Algunos paquetes usados en el desarrollo de Avalon App
 
-This project is a starting point for a Flutter application.
+```
+dartz: Un paquete para un mejor mmanejo de errores
+flutter_bloc: gestionar la administracion de estado y logic de la app
+get_it: localizador de servicios y mejora la inyeccion de dependencias
+google_fonts: estilisa la fuente de la app
+hive: base de datos local para el respaldo de los datos en el dispositivo
+http: para realizar solicitudes a la api rest de Movie db
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Arquitectura Usada
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Clean code basado en capas:
+  - Data layer
+  - domain layer
+  - presentation layer
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Estructura de carpetas
+
+<img src="screenshot/folder-tree.png" height=350></img>
