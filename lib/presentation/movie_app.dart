@@ -104,8 +104,6 @@ class _MovieAppState extends State<MovieApp> {
                       enabledBorder: const UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.grey)),
                     ),
-                    // colorScheme: ColorScheme.fromSwatch()
-                    //     .copyWith(secondary: AppColor.royalBlue),
                   ),
                   supportedLocales:
                       Languages.languages.map((e) => Locale(e.code)).toList(),
