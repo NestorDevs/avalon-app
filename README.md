@@ -33,3 +33,7 @@ http: para realizar solicitudes a la api rest de Movie db
 
 Fuente:
 https://github.com/NestorDevs/avalon-app/releases
+
+Captura
+
+<img src="screenshot/relase-apk.png" height=350></img>
