@@ -28,7 +28,7 @@ http: para realizar solicitudes a la api rest de Movie db
 
 - Basado en github Actions
 - Solo Android
-- Flujo de ocntruccion de entregable APK
+- Flujo de Construccion de entregable APK
 - Localizacion en release de Github Code
 
 Fuente:
